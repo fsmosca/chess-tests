@@ -3,8 +3,9 @@ Chess engines test results
 
 ### Test sets
 
-* Arasan20.epd, https://www.arasanchess.org/testsuite.shtml
-* OTSv4.epd, https://sites.google.com/site/computerschess/ots-v4-ranking
+* Arasan20.epd, [tactical], https://www.arasanchess.org/testsuite.shtml
+* OTSv4.epd, [opening], https://sites.google.com/site/computerschess/ots-v4-ranking
+* ssm_4_5_men.epd, [ending], https://drive.google.com/file/d/1s8yNKYQNkJ7XwiHiDMYCnT2yOtnpyGfp/view?usp=sharing
 
 ### Conditions
 * Each position is analyzed at 5s or 5000ms
