@@ -26,7 +26,7 @@
                     var title = $(this).text();
                     $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
                 } );
-                var table = $('#example').DataTable({'lengthMenu': [[10, 25, 50, 100, -1], [10, 25, 50, 100, 'All']],'columnDefs':[{'width':'25%', 'targets':0},{'width':'15%', 'targets':7}],'iDisplayLength': 50,fixedHeader: {header: true},'order': [[ 7, 'asc' ],[ 3, 'desc' ]]});
+                var table = $('#example').DataTable({'lengthMenu': [[10, 25, 50, 100, -1], [10, 25, 50, 100, 'All']],'columnDefs':[{'width':'20%', 'targets':0},{'width':'15%', 'targets':7}],'iDisplayLength': 50,fixedHeader: {header: true},'order': [[ 7, 'asc' ],[ 3, 'desc' ]]});
                 table.columns().every( function () {
                     var that = this;
                     $( 'input', this.footer() ).on( 'keyup change', function () {
@@ -55,10 +55,11 @@
                             <th>pos</th>
                             <th>score</th>
                             <th>pct</th>
-                            <th>ti (ms)/pos</th>
+                            <th>time (ms)</th>
                             <th>threads</th>
                             <th>hash (mb)</th>
                             <th>epdfile</th>
+                            <th>category</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -66,171 +67,254 @@
                                 <td><b>Stockfish 10</b></td>
                                 <td>200</td>
                                 <td>94</td>
-                                <td>47.00</td>
+                                <td>47.0</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Arasan 21.1</b></td>
                                 <td>200</td>
                                 <td>22</td>
-                                <td>11.00</td>
+                                <td>11</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Andscacs 0.95</b></td>
                                 <td>200</td>
                                 <td>57</td>
-                                <td>28.50</td>
+                                <td>28.5</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Fire 7.1</b></td>
                                 <td>200</td>
                                 <td>24</td>
-                                <td>12.00</td>
+                                <td>12</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Ethereal 11.25</b></td>
                                 <td>200</td>
                                 <td>36</td>
-                                <td>18.00</td>
+                                <td>18</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Cheng 4.39</b></td>
                                 <td>200</td>
                                 <td>14</td>
-                                <td>7.00</td>
+                                <td>7</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Texel 1.07</b></td>
                                 <td>200</td>
                                 <td>16</td>
-                                <td>8.00</td>
+                                <td>8</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Wasp 3.50</b></td>
                                 <td>200</td>
                                 <td>23</td>
-                                <td>11.50</td>
+                                <td>11.5</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Hannibal 1.7</b></td>
                                 <td>200</td>
                                 <td>28</td>
-                                <td>14.00</td>
+                                <td>14</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Vajolet2 2.6.1</b></td>
                                 <td>200</td>
                                 <td>18</td>
-                                <td>9.00</td>
+                                <td>9</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Xiphos 0.5</b></td>
                                 <td>200</td>
                                 <td>73</td>
-                                <td>36.50</td>
+                                <td>36.5</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Demolito 2018-10-29</b></td>
                                 <td>200</td>
                                 <td>11</td>
-                                <td>5.50</td>
+                                <td>5.5</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Amoeba 2.8</b></td>
                                 <td>200</td>
                                 <td>12</td>
-                                <td>6.00</td>
+                                <td>6</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Booot 6.3.1</b></td>
                                 <td>200</td>
                                 <td>22</td>
-                                <td>11.00</td>
+                                <td>11</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>RofChade v2.0</b></td>
                                 <td>200</td>
                                 <td>31</td>
-                                <td>15.50</td>
+                                <td>15.5</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Fizbo 2</b></td>
                                 <td>200</td>
                                 <td>18</td>
-                                <td>9.00</td>
+                                <td>9</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>arasan20.epd</td>
+                                <td>tactical</td>
                             </tr>
                             <tr>
                                 <td><b>Stockfish 10</b></td>
                                 <td>400</td>
                                 <td>180</td>
-                                <td>45.00</td>
+                                <td>45.0</td>
                                 <td>5000</td>
                                 <td>1</td>
                                 <td>256</td>
                                 <td>OTSv4.epd</td>
+                                <td>opening</td>
+                            </tr>
+                            <tr>
+                                <td><b>Deuterium v2019.2.37.46</b></td>
+                                <td>400</td>
+                                <td>90</td>
+                                <td>22.5</td>
+                                <td>5000</td>
+                                <td>1</td>
+                                <td>256</td>
+                                <td>OTSv4.epd</td>
+                                <td>opening</td>
+                            </tr>
+                            <tr>
+                                <td><b>Ethereal 11.25</b></td>
+                                <td>400</td>
+                                <td>120</td>
+                                <td>30.0</td>
+                                <td>5000</td>
+                                <td>1</td>
+                                <td>256</td>
+                                <td>OTSv4.epd</td>
+                                <td>opening</td>
+                            </tr>
+                            <tr>
+                                <td><b>Fire 7.1</b></td>
+                                <td>400</td>
+                                <td>104</td>
+                                <td>26.0</td>
+                                <td>5000</td>
+                                <td>1</td>
+                                <td>256</td>
+                                <td>OTSv4.epd</td>
+                                <td>opening</td>
+                            </tr>
+                            <tr>
+                                <td><b>Andscacs 0.95</b></td>
+                                <td>400</td>
+                                <td>126</td>
+                                <td>31.5</td>
+                                <td>5000</td>
+                                <td>1</td>
+                                <td>256</td>
+                                <td>OTSv4.epd</td>
+                                <td>opening</td>
+                            </tr>
+                            <tr>
+                                <td><b>Arasan 21.3</b></td>
+                                <td>400</td>
+                                <td>110</td>
+                                <td>27.5</td>
+                                <td>5000</td>
+                                <td>1</td>
+                                <td>256</td>
+                                <td>OTSv4.epd</td>
+                                <td>opening</td>
+                            </tr>
+                            <tr>
+                                <td><b>Xiphos 0.5</b></td>
+                                <td>400</td>
+                                <td>138</td>
+                                <td>34.5</td>
+                                <td>5000</td>
+                                <td>1</td>
+                                <td>256</td>
+                                <td>OTSv4.epd</td>
+                                <td>opening</td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -239,10 +323,11 @@
                                 <th>pos</th>
                                 <th>score</th>
                                 <th>pct</th>
-                                <th>ti (ms)/pos</th>
+                                <th>time (ms)</th>
                                 <th>threads</th>
                                 <th>hash (mb)</th>
                                 <th>epdfile</th>
+                                <th>category</th>
                             </tr>
                         </tfoot>
                     </table>
