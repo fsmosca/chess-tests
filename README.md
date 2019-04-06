@@ -22,6 +22,7 @@ Download: [ssm_4_5_men.epd](https://drive.google.com/file/d/1s8yNKYQNkJ7XwiHiDMY
 ### Conditions
 * Each position is analyzed at 5s or 5000ms
 * Engine is set to use 1 thread and 256 MB hash
+* End Game Tablebases are not used
 * System: Processor i7-2600K 3.4 Ghz 12GB RAM, Windows 7 Prof. OS
 
 ### Test results
