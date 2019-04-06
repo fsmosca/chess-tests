@@ -26,3 +26,6 @@ Download: [ssm_4_5_men.epd](https://drive.google.com/file/d/1s8yNKYQNkJ7XwiHiDMY
 
 ### Test results
 [Link to test results](https://fsmosca.github.io/chess-tests/)
+
+### Credits
+* [Datatables ](https://datatables.net/)
