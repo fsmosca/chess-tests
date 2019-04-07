@@ -19,8 +19,14 @@ Download: [OTSv4.epd](https://sites.google.com/site/computerschess/ots-v4-rankin
 Author: Sergei Markoff<br>
 Category: Ending<br>
 Number of positions: 391<br>
-Description: 4 and 5 men ending, modified by me selecting only those with single bm also added some opcodes<br>
+Description: 4 and 5 men ending, modified by me selecting only those with single bm also added some opcodes.<br>
 Download: [ssm_4_5_men.epd](https://drive.google.com/file/d/1s8yNKYQNkJ7XwiHiDMYCnT2yOtnpyGfp/view?usp=sharing)
+* midgames250.epd<br>
+Author: Kai Laskos<br>
+Category: Positional<br>
+Number of positions: 250<br>
+Description: Middle phase positions based from human games around move 15 to 22.<br>
+Download: [midgames250.epd](http://talkchess.com/forum3/download/file.php?id=414)
 
 ### Conditions
 * Each position is analyzed at 5s or 5000ms
