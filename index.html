@@ -26,7 +26,7 @@
                     var title = $(this).text();
                     $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
                 } );
-                var table = $('#example').DataTable({'lengthMenu': [[10, 25, 50, 100, -1], [10, 25, 50, 100, 'All']],'columnDefs':[{'width':'20%', 'targets':1}],'iDisplayLength': 50,fixedHeader: {header: true},'order': [[ 8, 'asc' ],[ 4, 'desc' ]]});
+                var table = $('#example').DataTable({'pageLength': 200,'lengthMenu': [[10, 25, 50, 100, 200, 500, -1], [10, 25, 50, 100, 200, 500, 'All']],'columnDefs':[{'width':'20%', 'targets':1}],'iDisplayLength': 50,fixedHeader: {header: true},'order': [[ 8, 'asc' ],[ 4, 'desc' ]]});
                 table.columns().every( function () {
                     var that = this;
                     $( 'input', this.footer() ).on( 'keyup change', function () {
