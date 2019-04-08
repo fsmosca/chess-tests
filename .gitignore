@@ -1,0 +1,28 @@
+# Ignore test files
+*.pgn
+*.epd
+*.bat
+*.exe
+*.log
+*.py
+*.csv
+
+# Ignore execurable generator script
+setup.py
+
+# Ignore files inside the dirs created by setup.py
+build/*
+dist/*
+
+# Ignore files inside tools, output, pgn and epd dirs
+Pgn/*
+Epd/*
+Tools/*
+Output/*
+
+# Ignore opening books such as cerebellum and polyglot
+*.bin
+
+# Ignore text files, except README.txt
+# *.txt
+# !README.md
