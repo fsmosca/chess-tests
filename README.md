@@ -1,5 +1,9 @@
-# chess-tests
-Computer chess program [results](https://fsmosca.github.io/chess-tests/) on different test suites such as positional, tactical, opening, middle and ending phases of the game. Engines are run on single thread at 5s/position analysis time.
+# Chess tests
+Computer chess program test results on different test suites such as positional, tactical, opening, middle and ending phases of the game. Engines are run on single thread at 5s/position analysis time.
+
+[Test results](https://fsmosca.github.io/chess-tests/)
+
+![](https://i.imgur.com/CRSj64P.png)
 
 ### Test sets
 
