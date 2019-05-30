@@ -38,6 +38,13 @@ Number of positions: 183<br>
 Description: Encyclopedia of Chess Middlegames<br>
 Download: [ecmgcp.epd](http://www.arasanchess.org/tests.zip)
 
+* Lc0_Sf_test_suite_tcec15.epd<br>
+Author: fsm<br>
+Category: General<br>
+Number of positions: 418<br>
+Description: Positions are taken from the games with 1-0 and 0-1 results from Lc0-Stockfish match in TCEC15. Easy moves are removed by letting Stockfish analyze each position at 1s/pos if the game move and stockfish best move are the same.<br>
+Download: [Lc0_Sf_test_suite_tcec15](https://github.com/fsmosca/chess-tests/blob/master/Test%20sets/Lc0_Sf_test_suite_tcec15.epd)
+
 ### Conditions
 * Each position is analyzed at 5s or 5000ms
 * Engine is set to use 1 thread and 256 MB hash
