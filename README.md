@@ -1,4 +1,4 @@
-Chess tests
+# Chess tests
 Computer chess program test results on different test suites such as positional, tactical, opening, middle and ending phases of the game. Engines are run on single thread at 5s/position analysis time.
 
 [Test results](https://fsmosca.github.io/chess-tests/)
