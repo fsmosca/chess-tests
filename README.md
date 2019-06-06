@@ -45,6 +45,13 @@ Number of positions: 418<br>
 Description: Positions are taken from the games with 1-0 and 0-1 results from Lc0-Stockfish superfinal match in TCEC15. Positions with easy bestmove were removed by letting Stockfish 10 analyze each position at 1s/pos if the game move and stockfish best move are the same.<br>
 Download: [Lc0_Sf_test_suite_tcec15.epd](https://github.com/fsmosca/chess-tests/blob/master/Test%20sets/Lc0_Sf_test_suite_tcec15.epd)
 
+* Alternative Chess Test.epd<br>
+Author: <br>
+Category: Tricky ending and hard mate<br>
+Number of positions: 287<br>
+Description: Mostly contains tricky endgame puzzles and difficult mates.<br>
+Download: [A post from Rybka forum](http://rybkaforum.net/cgi-bin/rybkaforum/topic_show.pl?tid=33055)
+
 ### Conditions
 * Each position is analyzed at 5s or 5000ms
 * Engine is set to use 1 thread and 256 MB hash
